@@ -24,6 +24,6 @@ public class TemperaturaFahrenheit extends Temperatura {
     @Override
     public double getCelsius() {
        // T(°C) = (T(°F) - 32) / (9/5)  --> formula para converter fahrenheit para celsius
-        return (valor - 32.0) / (9/5);
+        return (valor - 32.0) / (9.0/5.0);
     }
 }
