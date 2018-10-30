@@ -5,13 +5,13 @@ public abstract class Temperatura {
 
     /**
      * Devolve a temperatura em graus Fahrenheit
-     * @return um número que representa a temperatura em graus fahrenheit
+     * @return um número que representa a temperatura em graus Fahrenheit
      */
-    public abstract double getFahrenheit(); //class abstract serve apenas de base para defenir
+    public abstract double getFahrenheit();
 
     /**
-     * Devolve a temperatura em graus Celsius
-     * @return um número que representa a temperatura em graus celsius
+     * Devolve a temperatura em graus Fahrenheit
+     * @return um número que representa a temperatura em graus Celsius
      */
     public abstract double getCelsius();
 }

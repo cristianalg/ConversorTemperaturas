@@ -1,15 +1,14 @@
 package pt.ipg.conversortemperaturas;
 
 public class TemperaturaFahrenheit extends Temperatura {
-    //criar um construtor
-    public TemperaturaFahrenheit(double valor){
+    public TemperaturaFahrenheit(double valor) {
         this.valor = valor;
     }
 
     /**
      * Devolve a temperatura em graus Fahrenheit
      *
-     * @return um número que representa a temperatura em graus fahrenheit
+     * @return um número que representa a temperatura em graus Fahrenheit
      */
     @Override
     public double getFahrenheit() {
@@ -17,13 +16,12 @@ public class TemperaturaFahrenheit extends Temperatura {
     }
 
     /**
-     * Devolve a temperatura em graus Celsius
+     * Devolve a temperatura em graus Fahrenheit
      *
-     * @return um número que representa a temperatura em graus celsius
+     * @return um número que representa a temperatura em graus Celsius
      */
     @Override
     public double getCelsius() {
-       // T(°C) = (T(°F) - 32) / (9/5)  --> formula para converter fahrenheit para celsius
-        return (valor - 32.0) / (9.0/5.0);
+        return (valor - 32.0) / (9.0 / 5.0);
     }
 }

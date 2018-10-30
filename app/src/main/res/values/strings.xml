@@ -2,11 +2,8 @@
     <string name="app_name">Conversor de Temperaturas</string>
     <string name="action_settings">Settings</string>
     <string name="temperatura">Temperatura</string>
-    <string name="Celsius">Celsius</string>
-    <string name="Fahrenheit">Fahrenheit</string>
-    <string name="Unidade">Unidade</string>
-    <string name="title_activity_mostra_temperaturas">Temperatura</string>
-    <string name="Fahrenheit">Fahrenheit</string>
+    <string name="unidade">Unidade</string>
     <string name="fahrenheit">Fahrenheit</string>
     <string name="celsius">Celsius</string>
+    <string name="title_activity_mostra_temperaturas">Temperatura</string>
 </resources>

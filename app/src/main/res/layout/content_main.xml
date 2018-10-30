@@ -9,17 +9,17 @@
     tools:showIn="@layout/activity_main">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="@dimen/margem_controlos"
         android:layout_marginLeft="@dimen/margem_controlos"
         android:layout_marginTop="@dimen/margem_controlos"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="@dimen/margem_controlos"
         android:layout_marginRight="@dimen/margem_controlos"
         android:background="@color/colorLabels"
-        android:gravity="center_horizontal"
-        android:padding="@dimen/padding_Controlos"
+        android:gravity="center"
+        android:padding="@dimen/padding_labels"
         android:text="@string/temperatura"
         android:textColor="@color/colorTextoLabels"
         android:textSize="@dimen/tamanho_texto_labels"
@@ -27,7 +27,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
     <EditText
         android:id="@+id/editTextTemperatura"
@@ -37,50 +36,65 @@
         android:ems="10"
         android:importantForAutofill="no"
         android:inputType="numberSigned"
-        android:padding="@dimen/padding_Controlos"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        android:padding="@dimen/padding_labels"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:targetApi="o" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView3"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="@dimen/margem_controlos"
         android:background="@color/colorLabels"
-        android:gravity="center_horizontal"
-        android:padding="@dimen/padding_Controlos"
-        android:text="@string/Unidade"
+        android:gravity="center"
+        android:padding="@dimen/padding_labels"
+        android:text="@string/unidade"
         android:textColor="@color/colorTextoLabels"
         android:textSize="@dimen/tamanho_texto_labels"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTemperatura"
+        app:layout_constraintStart_toStartOf="@+id/editTextTemperatura"
         app:layout_constraintTop_toBottomOf="@+id/editTextTemperatura" />
 
     <RadioGroup
+        android:id="@+id/radioGroup2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@color/colorInputs"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView2">
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
 
         <RadioButton
             android:id="@+id/radioButtonFahrenheit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/Fahrenheit" />
+            android:text="@string/fahrenheit" />
 
         <RadioButton
             android:id="@+id/radioButtonCelsius"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/Celsius" />
+            android:text="@string/celsius" />
     </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="mostraTemperaturas"
+        android:text="Calcular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
 
 </android.support.constraint.ConstraintLayout>
